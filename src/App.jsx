@@ -21,7 +21,8 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <Router>
+    
+    <Router>  {/* Cambiar con un basename con el nombre del repositorio o solo si alguna vez decido cambiar el subdirectorio */}
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
       <div
         className={`min-h-screen transition-opacity duration-700 ${

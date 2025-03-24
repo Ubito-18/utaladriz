@@ -16,7 +16,7 @@ export const Home = () => {
 
           <div className="relative flex justify-center w-screen border border-stone-300 bg-gray-200 shadow-inner mb-10 h-[360px]">
           <img 
-          src="Uba.png" 
+          src="/Uba.png"
           alt="Proyecto 1" 
           className="absolute bottom-0 left-1/2 -translate-x-1/2 w-80 h-auto"
           />
