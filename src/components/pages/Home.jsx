@@ -27,7 +27,7 @@ export const Home = () => {
           </h1>
 
           <p className="text-2xl md:text-2xl font-bold pb-16 bg-gradient-to-br from-teal-700 to-teal-400 bg-clip-text text-transparent leading-right">
-            Product Designer - UX/UI Designer - Frontend Developer
+          Product Designer - Frontend Developer - Data Scientist - Bioengineer
           </p>
 
         

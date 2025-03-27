@@ -25,10 +25,14 @@ export const About = () => {
           <div className="max-w-5xl text-center px-6">
           <h2 className="text-5xl font-bold mb-10 text-stone-700 text-center">Sobre Mí</h2>
             <p className="text-stone-700 text-lg mb-5">
-              Me considero un apasionado de la tecnología y el diseño, con una visión integral que combina múltiples disciplinas. Tengo experiencia en planificación y gestión de proyectos, diseño UX/UI y desarrollo de productos digitales.
+            Me considero un apasionado por la tecnología y la innovación, lo que me ha llevado a explorar y aprender en diversas áreas, desarrollando una visión integral que combina múltiples disciplinas. 
+            Tengo experiencia en planificación y gestión de proyectos, diseño UX/UI, fabricación de productos industriales y desarrollo de productos digitales.
             </p>
             <p className="text-stone-700 text-lg mb-5">
-              Además, he trabajado en la fabricación de productos industriales utilizando herramientas de modelado 3D y aplicando tecnologías de fabricación digital para crear soluciones innovadoras y funcionales.
+            Soy Ingeniero Civil en Bioingeniería y cuento con conocimientos en análisis de datos utilizando Python, SQL (Postgres) y herramientas como Power BI.
+            </p>
+            <p className="text-stone-700 text-lg mb-5">
+            Si no me ves detrás de un computador, es porque estoy aventurándome en un buen trekking con amigos, acampando, jugando fútbol o practicando algún otro deporte. 🏔️⚽
             </p>
             
           </div>
