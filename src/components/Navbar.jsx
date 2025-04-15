@@ -1,17 +1,34 @@
-import { Link } from "react-router-dom"; // Importa Link de react-router-dom
-import { useEffect } from "react"; 
+import { Link } from "react-router-dom";
+import { useEffect, useState, useRef } from "react";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
+  const [showProjects, setShowProjects] = useState(false);
+  const dropdownRef = useRef(null);
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
+
+  // Cierra el menú al hacer clic fuera
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowProjects(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="font-mono text-xl font-bold text-stone-700">
-          &lt;<span className="text-teal-700">utaladriz</span>&gt;
+            &lt;<span className="text-teal-700">utaladriz</span>&gt;
           </Link>
 
           <div
@@ -22,25 +39,56 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            {/* Usamos <Link> en lugar de <a> */}
             <Link
               to="/"
               className="text-stone-700 font-semibold hover:text-teal-700 hover:font-bold transition-all"
             >
               Inicio
             </Link>
+
             <Link
               to="/about"
               className="text-stone-700 font-semibold hover:text-teal-700 hover:font-bold transition-all"
             >
               Sobre Mí
             </Link>
-            <Link
-              to="/projects"
-              className="text-stone-700 font-semibold hover:text-teal-700 hover:font-bold transition-all"
+
+            {/* Menú desplegable de Proyectos */}
+            <div
+              className="relative text-stone-700 font-semibold hover:text-teal-700 hover:font-bold transition-all cursor-pointer"
+              onClick={() => setShowProjects(!showProjects)}
+              ref={dropdownRef}
             >
               Proyectos
-            </Link>
+              <div
+                className={`absolute top-full left-0 bg-white shadow-lg rounded-md mt-2 z-50 transition-all duration-200 ${
+                  showProjects ? "block" : "hidden"
+                }`}
+              >
+                <Link
+                  to="/projects/cad-cam"
+                  className="block px-4 py-2 text-sm text-stone-700 hover:bg-teal-800/10"
+                  onClick={() => setShowProjects(false)}
+                >
+                  CAD/CAM
+                </Link>
+                <Link
+                  to="/projects/dev"
+                  className="block px-4 py-2 text-sm text-stone-700 hover:bg-teal-800/10"
+                  onClick={() => setShowProjects(false)}
+                >
+                  Web/Mobile Dev.
+                </Link>
+                <Link
+                  to="/projects/data-science"
+                  className="block px-4 py-2 text-sm text-stone-700 hover:bg-teal-800/10"
+                  onClick={() => setShowProjects(false)}
+                >
+                  Ciencia y Análisis de Datos
+                </Link>
+              </div>
+            </div>
+
             <Link
               to="/contact"
               className="text-stone-700 font-semibold hover:text-teal-700 hover:font-bold transition-all"

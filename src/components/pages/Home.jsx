@@ -27,7 +27,7 @@ export const Home = () => {
           </h1>
 
           <p className="text-2xl md:text-2xl font-bold pb-16 bg-gradient-to-br from-teal-700 to-teal-400 bg-clip-text text-transparent leading-right">
-          Product Designer - Frontend Developer - Data Scientist - Bioengineer
+          Bioengineering - Data Science - Development - Product Design
           </p>
 
         
@@ -36,10 +36,10 @@ export const Home = () => {
 
           <div className="flex justify-center py-10 space-x-4">
             <Link
-              to="/projects"
+              to="/about"
               className="bg-teal-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_10px_rgba(0,0,0,100)] hover:bg-teal-700 hover:text-gray-100"
             >
-              Ver Proyectos
+              Sobre Mí
             </Link>
 
             <Link

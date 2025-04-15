@@ -11,7 +11,7 @@ export const About = () => {
   const fabricationSkills = ["Arduino","3D Modeling", "3D Printing", "CNC", "Laser Cutting", "Waterjet", "Rhino/Grasshopper", "Fusion 360", "Inventor", "UE5", "V-Ray"];
   const uxuiSkills = ["Figma", "Adobe Creative Suite", "Design Tokens", "Design Systems", "User Research", "Miro/Visio", "Jira,Celoxis"];
   const frontendSkills = ["React", "React Router", "JavaScript ES6", "TailwindCSS v4.0", "CSS 3", "HTML 5", "Vite"];
-  const backendSkills = ["Node.js", "Express.js", "APIs", "SQL", "Postgres", "Python", "Git", "Github"];
+  const backendSkills = ["Node.js", "Express.js", "APIs", "SQL", "Postgres", "Python", "Numpy", "Pandas", "Matplotlib", "Power BI", "Git", "Github"];
 
 
   
@@ -25,11 +25,11 @@ export const About = () => {
           <div className="max-w-5xl text-center px-6">
           <h2 className="text-5xl font-bold mb-10 text-stone-700 text-center">Sobre Mí</h2>
             <p className="text-stone-700 text-lg mb-5">
-            Me considero un apasionado por la tecnología y la innovación, lo que me ha llevado a explorar y aprender en diversas áreas, desarrollando una visión integral que combina múltiples disciplinas. 
-            Tengo experiencia en planificación y gestión de proyectos, diseño UX/UI, fabricación de productos industriales y desarrollo de productos digitales.
+            Soy Ingeniero Civil en Bioingeniería y cuento con conocimientos en Ciencia de datos, Machine Learning y Análisis de datos utilizando Python, SQL y Power BI.
             </p>
             <p className="text-stone-700 text-lg mb-5">
-            Soy Ingeniero Civil en Bioingeniería y cuento con conocimientos en análisis de datos utilizando Python, SQL (Postgres) y herramientas como Power BI.
+            Me considero un apasionado por la tecnología y la innovación, lo que me ha llevado a explorar y aprender en diversas áreas, desarrollando una visión integral que combina múltiples disciplinas. 
+            Tengo experiencia en planificación y gestión de proyectos, diseño UX/UI, fabricación de productos industriales y desarrollo de productos digitales.
             </p>
             <p className="text-stone-700 text-lg mb-5">
             Si no me ves detrás de un computador, es porque estoy aventurándome en un buen trekking con amigos, acampando, jugando fútbol o practicando algún otro deporte. 🏔️⚽
@@ -43,7 +43,7 @@ export const About = () => {
               <SkillSection title="Fabricación Digital" skills={fabricationSkills} />
               <SkillSection title="Diseño UX/UI" skills={uxuiSkills} />
               <SkillSection title="Frontend" skills={frontendSkills} />
-              <SkillSection title="Backend" skills={backendSkills} />
+              <SkillSection title="Backend/Datos" skills={backendSkills} />
             </div>
 
         {/* Educación y Experiencia Laboral */}

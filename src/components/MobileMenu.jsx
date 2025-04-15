@@ -1,18 +1,15 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
+  const [showProjectsMobile, setShowProjectsMobile] = useState(false);
+
   return (
     <div
       className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex flex-col items-center justify-center
-                     transition-all duration-300 ease-in-out
-
-                     ${
-                       menuOpen
-                         ? "h-screen opacity-100 pointer-events-auto"
-                         : "h-0 opacity-0 pointer-events-none"
-                     }
-                   `}
+        transition-all duration-300 ease-in-out
+        ${menuOpen ? "h-screen opacity-100 pointer-events-auto" : "h-0 opacity-0 pointer-events-none"}
+      `}
     >
       <button
         onClick={() => setMenuOpen(false)}
@@ -25,44 +22,67 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <Link
         to="/"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
-            ${
-              menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-            }        
-        `}
+        className="text-2xl font-semibold text-white my-4 transition-transform duration-300"
       >
         Inicio
       </Link>
+
       <Link
         to="/about"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
-            ${
-              menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-            }        
-        `}
+        className="text-2xl font-semibold text-white my-4 transition-transform duration-300"
       >
         Sobre Mí
       </Link>
-      <Link
-        to="/projects"
-        onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
-            ${
-              menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-            }        
-        `}
-      >
-        Proyectos
-      </Link>
+
+      {/* Sección desplegable Proyectos */}
+      <div className="text-2xl font-semibold text-white my-4 text-center">
+        <button
+          onClick={() => setShowProjectsMobile((prev) => !prev)}
+          className="focus:outline-none"
+        >
+          Proyectos
+        </button>
+        {showProjectsMobile && (
+          <div className="mt-2 space-y-2">
+            <Link
+              to="/projects/cad-cam"
+              onClick={() => {
+                setMenuOpen(false);
+                setShowProjectsMobile(false);
+              }}
+              className="block text-lg text-teal-100 hover:text-white"
+            >
+              CAD/CAM
+            </Link>
+            <Link
+              to="/projects/dev"
+              onClick={() => {
+                setMenuOpen(false);
+                setShowProjectsMobile(false);
+              }}
+              className="block text-lg text-teal-100 hover:text-white"
+            >
+              Web/Mobile Dev
+            </Link>
+            <Link
+              to="/projects/data-science"
+              onClick={() => {
+                setMenuOpen(false);
+                setShowProjectsMobile(false);
+              }}
+              className="block text-lg text-teal-100 hover:text-white"
+            >
+              Ciencia y Análisis de Datos
+            </Link>
+          </div>
+        )}
+      </div>
+
       <Link
         to="/contact"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
-            ${
-              menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-            }        
-        `}
+        className="text-2xl font-semibold text-white my-4 transition-transform duration-300"
       >
         Contacto
       </Link>
