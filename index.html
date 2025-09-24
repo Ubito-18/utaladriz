@@ -18,13 +18,17 @@
         if (
           l.hostname !== 'localhost' &&
           l.hostname !== '127.0.0.1' &&
-          l.search[1] === '/'
+          l.search.startsWith('?/')
         ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) {
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-            l.pathname + decoded + l.hash
+          var search = l.search;
+          var pathAndQuery = search.slice(2); // remove '?/'
+          var pathEnd = pathAndQuery.indexOf('&');
+          var realPath = pathEnd === -1 ? pathAndQuery : pathAndQuery.slice(0, pathEnd);
+          var rest = pathEnd === -1 ? '' : pathAndQuery.slice(pathEnd).replace(/^&/, '?');
+          window.history.replaceState(
+            null,
+            null,
+            '/' + realPath + rest + l.hash
           );
         }
       }(window.location))
