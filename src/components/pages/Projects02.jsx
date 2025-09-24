@@ -24,7 +24,7 @@ export const Projects02 = () => {
             
             {/* Proyecto Metalogi.ai*/}
             <div className="p-6 rounded-xl border border-stone-900/20 hover:-translate-y-1 hover:border-stone-50 hover:shadow-[0_0px_8px_rgba(0,0,0,100)] transition">
-              <h3 className="text-xl text-stone-700 font-bold mb-2">  METALOGI.AI</h3>
+              <h3 className="text-xl text-stone-700 font-bold mb-2">  Metalogi.ai - Smart Warning Systems.</h3>
               <p className="text-stone-700 mb-4">
               Empresa de inteligencia artificial a nivel industrial para la entrega de servicios IoT.
               presentes en Chile, Argentina, USA y próximamente en Canadá. Entre sus servicios, destacan plataformas de «Smart Logistics», «Smart Parking» y «Smart Condominium».

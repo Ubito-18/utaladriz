@@ -1,10 +1,9 @@
+
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 export const LoadingScreen = ({ onComplete }) => {
   const [text, setText] = useState("");
   const fullText = "<Portafolio />";
-  const navigate = useNavigate();
 
   useEffect(() => {
     let index = 0;
@@ -17,13 +16,12 @@ export const LoadingScreen = ({ onComplete }) => {
 
         setTimeout(() => {
           onComplete();
-          navigate("/"); // 👈 Redirigir correctamente según la base
         }, 1000);
       }
     }, 100);
 
     return () => clearInterval(interval);
-  }, [onComplete, navigate]);
+  }, [onComplete]);
 
   return (
     <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">

@@ -7,6 +7,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio - Ubaldo Taladriz</title>
+    
+    <!-- GitHub Pages SPA support -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // Solo ejecutar en producción (no en localhost)
+      (function(l) {
+        if (
+          l.hostname !== 'localhost' &&
+          l.hostname !== '127.0.0.1' &&
+          l.search[1] === '/'
+        ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </head>
   
 
