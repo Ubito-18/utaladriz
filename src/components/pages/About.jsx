@@ -17,7 +17,7 @@ export const About = () => {
   
 
   return (
-    <section id="about" className="min-h-full flex items-center justify-center py-16">
+    <section id="about" className="main-content min-h-full flex items-center justify-center py-16">
       <RevealOnScroll>
  
         {/* Franja gris horizontal */}
