@@ -22,6 +22,36 @@ export const Projects02 = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
+            {/* Proyecto Metalogi.ai*/}
+            <div className="p-6 rounded-xl border border-stone-900/20 hover:-translate-y-1 hover:border-stone-50 hover:shadow-[0_0px_8px_rgba(0,0,0,100)] transition">
+              <h3 className="text-xl text-stone-700 font-bold mb-2">  METALOGI.AI</h3>
+              <p className="text-stone-700 mb-4">
+              Empresa de inteligencia artificial a nivel industrial para la entrega de servicios IoT.
+              presentes en Chile, Argentina, USA y próximamente en Canadá. Entre sus servicios, destacan plataformas de «Smart Logistics», «Smart Parking» y «Smart Condominium».
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["React Native + Expo", "Tailwind CSS + NativeWind", "Android/iOS (Gradle, Xcode, Firebase)", "Rhino","V-Ray", "3D Modeling", "3D Printing", "Adobe Creative Suite", "Jira"].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="bg-teal-600 text-stone-50  py-1 px-3 rounded-full text-sm hover:bg-stone-900/90 
+                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all
+                    "
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex justify-between items-center">
+                <Link
+                  to="/projects/smart-systems" // Ruta a la página del proyecto
+                  className="font-bold text-stone-700 hover:text-teal-700 transition-colors my-4"
+                >
+                  Ver Proyecto →
+                </Link>
+              </div>
+            </div>
+            
             {/* Proyecto Indumotora*/}
             <div
               className="glass p-6 rounded-xl border border-stone-900/20

@@ -10,7 +10,7 @@ export const About = () => {
 
   const fabricationSkills = ["Arduino","3D Modeling", "3D Printing", "CNC", "Laser Cutting", "Waterjet", "Rhino/Grasshopper", "Fusion 360", "Inventor", "UE5", "V-Ray"];
   const uxuiSkills = ["Figma", "Adobe Creative Suite", "Design Tokens", "Design Systems", "User Research", "Miro/Visio", "Jira,Celoxis"];
-  const frontendSkills = ["React", "React Router", "JavaScript ES6", "TailwindCSS v4.0", "CSS 3", "HTML 5", "Vite"];
+  const frontendSkills = ["React", "React Native", "JavaScript ES6", "TailwindCSS v4.0", "CSS 3", "HTML 5", "Vite"];
   const backendSkills = ["Node.js", "Express.js", "APIs", "SQL", "Postgres", "Python", "Numpy", "Pandas", "Matplotlib", "Power BI", "Git", "Github"];
 
 
@@ -23,16 +23,18 @@ export const About = () => {
         {/* Franja gris horizontal */}
         <div className="w-full bg-gray-200 py-20 border border-gray-700/20 shadow-inner flex justify-center">
           <div className="max-w-5xl text-center px-6">
-          <h2 className="text-5xl font-bold mb-10 text-stone-700 text-center">Sobre Mí</h2>
+            <h2 className="text-5xl font-bold mb-10 text-stone-700 text-center">Sobre Mí</h2>
+            
             <p className="text-stone-700 text-lg mb-5">
-            Soy Ingeniero Civil en Bioingeniería y cuento con conocimientos en Ciencia de datos, Machine Learning y Análisis de datos utilizando Python, SQL y Power BI.
+              <strong>Ingeniero Civil en Bioingeniería</strong> e <strong>Ingeniero en Diseño</strong> con experiencia en <strong>transformación digital</strong>, <strong>gestión de proyectos</strong>, <strong>análisis de datos</strong> y <strong>desarrollo de productos</strong>.
             </p>
+            
             <p className="text-stone-700 text-lg mb-5">
-            Me considero un apasionado por la tecnología y la innovación, lo que me ha llevado a explorar y aprender en diversas áreas, desarrollando una visión integral que combina múltiples disciplinas. 
-            Tengo experiencia en planificación y gestión de proyectos, diseño UX/UI, fabricación de productos industriales y desarrollo de productos digitales.
+              Manejo herramientas de Business Analytics como <strong>Python</strong>, <strong>SQL</strong>, <strong>Excel</strong> y <strong>Power BI</strong>, aplicadas al <strong>análisis</strong>, <strong>visualización</strong> y <strong>automatización de datos</strong>. He liderado proyectos de <strong>diseño UX/UI</strong>, <strong>desarrollo web</strong> y <strong>mobile</strong> (<strong>Figma</strong>, <strong>React</strong>, <strong>React Native</strong>, <strong>Tailwind</strong>) y de fabricación digital (<strong>modelación</strong> e <strong>impresión 3D</strong>, <strong>CNC</strong>), aportando con una visión integral, multidisciplinaria enfocada en resultados.
             </p>
+            
             <p className="text-stone-700 text-lg mb-5">
-            Si no me ves detrás de un computador, es porque estoy aventurándome en un buen trekking con amigos, acampando, jugando fútbol o practicando algún otro deporte. 🏔️⚽
+              Si no me ves detrás de un computador, es porque estoy aventurándome en un buen trekking con amigos, acampando, jugando fútbol o practicando algún otro deporte. 🏔️⚽
             </p>
             
           </div>
@@ -51,10 +53,10 @@ export const About = () => {
           <InfoSection title="🏫 Educación">
             <ul className="list-disc list-inside text-stone-700 space-y-10">
               <li>
-                <strong>Ingeniería en Diseño (Completa).</strong> - Universidad Adolfo Ibáñez (2018-2024)
+                <strong>Ingeniería en Diseño (Titulado).</strong> - Universidad Adolfo Ibáñez (2018-2024)
               </li>
               <li>
-                <strong>Ingeniería Civil en Bioingeniería (Completa).</strong> - Universidad Adolfo Ibáñez (2017-2022)
+                <strong>Ingeniería Civil en Bioingeniería (Titulado).</strong> - Universidad Adolfo Ibáñez (2017-2022)
               </li>
               <li>
                 <strong>Ingeniería Civil en Informática y Telecomunicaciones.</strong> - Universidad Diego Portales (2015-2016)
@@ -66,11 +68,11 @@ export const About = () => {
             <div className="space-y-10 text-stone-700">
               <div>
                 <h4 className="font-semibold"> Ingeniero de Desarrollo de Productos, Jornada Completa. (2024 - 2025)</h4>
-                <p>EXE IoT - Metalogic, Smart Warning Systems.</p>
+                <p>Metalogi.ai, Smart Warning Systems.</p>
               </div>
               <div>
                 <h4 className="font-semibold">Ingeniero de Diseño de Productos, Jornada Completa. (2022 - 2024)</h4>
-                <p>Indumotora l Kia Chile, Hyundai Camiones & Buses.</p>
+                <p>Indumotora l Kia, Nammi, Hyundai Camiones & Buses y Landking Chile.</p>
               </div>
               <div>
                 <h4 className="font-semibold"> Pasante, Jornada Parcial. (2022 - 2023)</h4>
