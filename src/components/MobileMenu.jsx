@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
@@ -46,14 +46,14 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         {showProjectsMobile && (
           <div className="mt-2 space-y-2">
             <Link
-              to="/projects/cad-cam"
+              to="/projects/engineering"
               onClick={() => {
                 setMenuOpen(false);
                 setShowProjectsMobile(false);
               }}
               className="block text-lg text-teal-100 hover:text-white"
             >
-              CAD/CAM
+              Ingeniería & Fabricación
             </Link>
             <Link
               to="/projects/dev"
@@ -63,17 +63,17 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
               }}
               className="block text-lg text-teal-100 hover:text-white"
             >
-              Web/Mobile Dev
+              Desarrollo & UX/UI
             </Link>
             <Link
-              to="/projects/data-science"
+              to="/projects/bioengineering"
               onClick={() => {
                 setMenuOpen(false);
                 setShowProjectsMobile(false);
               }}
               className="block text-lg text-teal-100 hover:text-white"
             >
-              Ciencia y Análisis de Datos
+              Bioingeniería
             </Link>
           </div>
         )}

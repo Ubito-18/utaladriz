@@ -8,10 +8,10 @@ export const About = () => {
     window.scrollTo(0, 0);
   }, []); // El arreglo vacío asegura que esto solo ocurra cuando el componente se monte
 
-  const fabricationSkills = ["Arduino","3D Modeling", "3D Printing", "CNC", "Laser Cutting", "Waterjet", "Rhino/Grasshopper", "Fusion 360", "Inventor", "UE5", "V-Ray"];
-  const uxuiSkills = ["Figma", "Adobe Creative Suite", "Design Tokens", "Design Systems", "User Research", "Miro/Visio", "Jira,Celoxis"];
-  const frontendSkills = ["React", "React Native", "JavaScript ES6", "TailwindCSS v4.0", "CSS 3", "HTML 5", "Vite"];
-  const backendSkills = ["Node.js", "Express.js", "APIs", "SQL", "Postgres", "Python", "Numpy", "Pandas", "Matplotlib", "Power BI", "Git", "Github"];
+  const fabricationSkills = ["Arduino", "3D Modeling", "3D Printing", "CNC", "Laser Cutting", "Waterjet", "Rhino/Grasshopper", "Fusion 360", "Inventor", "UE5", "V-Ray"];
+  const uxuiSkills = ["Figma", "Adobe Creative Suite", "Design Tokens", "Design Systems", "User Research", "Prototyping", "Miro"];
+  const developmentSkills = ["React", "React Native", "TypeScript", "JavaScript", "TailwindCSS", "Node.js", "Express.js", "Firebase", "Expo", "Git"];
+  const dataSkills = ["Python", "SQL", "Postgres", "Pandas", "Numpy", "Matplotlib", "Power BI", "Excel", "Scikit-learn", "Tableau"];
 
 
   
@@ -30,11 +30,11 @@ export const About = () => {
             </p>
             
             <p className="text-stone-700 text-lg mb-5">
-              Manejo herramientas de Business Analytics como <strong>Python</strong>, <strong>SQL</strong>, <strong>Excel</strong> y <strong>Power BI</strong>, aplicadas al <strong>análisis</strong>, <strong>visualización</strong> y <strong>automatización de datos</strong>. He liderado proyectos de <strong>diseño UX/UI</strong>, <strong>desarrollo web</strong> y <strong>mobile</strong> (<strong>Figma</strong>, <strong>React</strong>, <strong>React Native</strong>, <strong>Tailwind</strong>) y de fabricación digital (<strong>modelación</strong> e <strong>impresión 3D</strong>, <strong>CNC</strong>), aportando con una visión integral, multidisciplinaria enfocada en resultados.
+              Especializado en Business Analytics con <strong>Python</strong>, <strong>SQL</strong>, <strong>Excel</strong> y <strong>Power BI</strong>, aplicadas al <strong>análisis</strong>, <strong>visualización</strong> y <strong>automatización de datos</strong>. He liderado proyectos de <strong>diseño UX/UI</strong>, desarrollo de <strong>aplicaciones web y mobile</strong> (<strong>Figma</strong>, <strong>React</strong>, <strong>React Native</strong>, <strong>Tailwind</strong>), y <strong>fabricación digital</strong> (<strong>modelación e impresión 3D</strong>, <strong>CNC</strong>), aportando una visión integral y multidisciplinaria enfocada en resultados medibles.
             </p>
             
             <p className="text-stone-700 text-lg mb-5">
-              Si no me ves detrás de un computador, es porque estoy aventurándome en un buen trekking con amigos, acampando, jugando fútbol o practicando algún otro deporte. 🏔️⚽
+              En mi tiempo libre me gusta aventurarme en un buen trekking con amigos, acampar, jugar fútbol o practicar algún otro deporte. 🏔️⚽
             </p>
             
           </div>
@@ -44,8 +44,8 @@ export const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 mt-6 text-center">
               <SkillSection title="Fabricación Digital" skills={fabricationSkills} />
               <SkillSection title="Diseño UX/UI" skills={uxuiSkills} />
-              <SkillSection title="Frontend" skills={frontendSkills} />
-              <SkillSection title="Backend/Datos" skills={backendSkills} />
+              <SkillSection title="Desarrollo" skills={developmentSkills} />
+              <SkillSection title="Datos" skills={dataSkills} />
             </div>
 
         {/* Educación y Experiencia Laboral */}

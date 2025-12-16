@@ -37,18 +37,18 @@ export const ProjectMyService = () => {
                 
       <div className="mb-16">
         <p className="text-stone-700 font-light mb-6">
-        MyService nace como proyecto desde fábrica el cual involucra a toda la red de concesionarios, tiene el proposito de 
-        estandarizar flujos de todos los canales de atención, mejorando la gestión de los dealers y homologando la experiencia de cliente,
-        siendo uno de los proyectos pilares del área de Transformación Digital el cuál se debe integrar al ecosistema digital
-        propuesto. Esta fue una de las responsabilidades que tuve dentro de la empresa, 
-        en la que tenía que estar a cargo de la coordinación, gestión e implementación de proyectos.
+        MyService nace como un proyecto impulsado desde fábrica, que involucra a toda la red de concesionarios. 
+        Su propósito es estandarizar los flujos de todos los canales de atención, optimizando la gestión de los dealers y homologando la experiencia del cliente. 
+        Este proyecto se posiciona como uno de los pilares del área de Transformación Digital, debiendo integrarse al ecosistema digital definido por la compañía.
         </p>
 
-        <p className="text-stone-700 font-light mb-6">Lideré el proyecto desde el diseño, 
-        creando interfaces para tablets/mobile. También, trabajé en la creación de diagramas de flujos
-        para definir procesos, backlogs de requerimientos, documentos de
-        requerimientos, entre otros. Para MyService realicé focus groups con key users y stakeholders para su
-        implementación.
+        <p className="text-stone-700 font-light mb-6">
+        Dentro de la empresa, esta iniciativa formó parte de mis principales responsabilidades, estando a cargo de la coordinación, gestión e implementación del proyecto.
+        </p>
+        
+        <p className="text-stone-700 font-light mb-6">
+        En este proyecto en particular, lideré la fase de diseño, desarrollando interfaces para tablets y dispositivos móviles. 
+        Además, participé en la definición de procesos mediante la creación de diagramas de flujo, gestión de backlogs de requerimientos y elaboración de documentación funcional. Para la implementación de MyService, también realicé focus groups con key users y stakeholders, asegurando la correcta adopción y alineación con las necesidades del negocio.
         </p>
 
       </div>     
