@@ -25,13 +25,10 @@ export const Home = () => {
         {/* Badges de información */}
         <div className="flex flex-wrap justify-center gap-3 mb-10 max-w-3xl">
           <span className="px-4 py-2 bg-stone-100 border border-teal-300 rounded-full text-teal-700 text-sm font-medium">
-            💼 Disponible para trabajar
-          </span>
-          <span className="px-4 py-2 bg-stone-100 border border-teal-300 rounded-full text-teal-700 text-sm font-medium">
             🎓 Doble titulación UAI
           </span>
           <span className="px-4 py-2 bg-stone-100 border border-teal-300 rounded-full text-teal-700 text-sm font-medium">
-            🚀 3+ años de experiencia
+            🚀 Años de experiencia
           </span>
         </div>
 
