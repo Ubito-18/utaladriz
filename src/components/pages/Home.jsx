@@ -19,15 +19,15 @@ export const Home = () => {
           Hola, Soy Ubaldo Taladriz
         </h1>
         <p className="text-2xl md:text-2xl font-bold pb-4 bg-gradient-to-br from-teal-700 to-teal-400 bg-clip-text text-transparent leading-right">
-          Bioengineering - Data Analytics - Development - Product Design
+          Bioengineer | Product Engineer
         </p>
         
         {/* Badges de información */}
         <div className="flex flex-wrap justify-center gap-3 mb-10 max-w-3xl">
-          <span className="px-4 py-2 bg-stone-100 border border-teal-300 rounded-full text-teal-700 text-sm font-medium">
+          <span className="px-4 py-2 bg-stone-250 border border-teal-400 rounded-full text-teal-700 text-sm font-medium">
             🎓 Doble titulación UAI
           </span>
-          <span className="px-4 py-2 bg-stone-100 border border-teal-300 rounded-full text-teal-700 text-sm font-medium">
+          <span className="px-4 py-2 bg-stone-250 border border-teal-400 rounded-full text-teal-700 text-sm font-medium">
             🚀 Años de experiencia
           </span>
         </div>
